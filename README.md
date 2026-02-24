@@ -9,7 +9,7 @@
 
 ---
 
-A simple auth template that connects to a host, checks creds, if valid returns a dll you can use to perform some action injection etc.
+A simple auth template for windows that connects to a host, checks creds, if valid returns a dll you can use to perform some action injection etc.
 If you want something added, fixed, or anything else, feel free to DM me.
 
 ```
