@@ -1,0 +1,35 @@
+{
+  "name": "kitty-auth-ui",
+  "version": "1.0.0",
+  "main": "ui.js",
+    "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "kitty.auth.app",
+    "productName": "kittyauth",
+    "artifactName": "kittyauth.exe",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "ui.js",
+      "preload.js",
+      "icon.png"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.3.1",
+    "electron-builder": "^24.13.3"
+  }
+}
